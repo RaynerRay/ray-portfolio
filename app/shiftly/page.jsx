@@ -1,5 +1,7 @@
 import ProductTimeline from "../../components/Timeline";
 import { CheckCircle, AlertCircle } from "lucide-react";
+import Approach from "./Approach";
+import ImageSection from "./Image";
 
 
 const problems = [
@@ -179,6 +181,8 @@ export default function Page() {
           </div>
         </div>
         <ProductTimeline />
+        <Approach />
+        {/* <ImageSection /> */}
       </div>
     </div>
   );

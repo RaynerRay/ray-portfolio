@@ -6,12 +6,13 @@ import Home1 from "../components/home/Home1";
 
 export default function Home() {
   return (
-    <>
+    <div className=" overflow-visible">
+
       <Hero />
      
       <CaseStudies />
       <Home1 />
       <ContactHome />
-    </>
+    </div>
   );
 }

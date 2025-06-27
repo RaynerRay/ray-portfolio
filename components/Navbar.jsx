@@ -7,13 +7,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-black text-white px-6 py-4 border-b border-gray-800 shadow-xl backdrop-blur-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/">
+    <nav className="bg-gradient-to-r from-gray-900 to-black text-white px-6 py-4 border-b border-gray-800 shadow-xl backdrop-blur-md ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center text-black px-4">
+        .
+        {/* <Link href="/">
           <span className="text-3xl font-extrabold bg-gradient-to-r from-teal-300 via-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer tracking-wider hover:scale-105 transition-transform duration-300 ease-in-out">
           GODFREY <span className="font-normal">NDINGINDWAYO</span>
           </span>
-        </Link>
+        </Link> */}
 
         <div className="hidden md:flex space-x-10 text-base font-semibold">
           <Link href="/">
