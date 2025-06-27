@@ -1,4 +1,5 @@
 import { AlertCircle, CheckCircle } from "lucide-react";
+import TimelineSunquest from './../../components/TimelineSuqnuest';
 
 const problems = [
   {
@@ -51,7 +52,7 @@ export default function Page() {
             href="https://www.sqasa.co.za"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
+            className="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
           >
             View Live Site →
           </a>
@@ -161,6 +162,7 @@ export default function Page() {
               ))}
             </div>
           </div>
+          <TimelineSunquest />
         </div>
       </div>
     );

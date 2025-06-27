@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4 md:p-6">
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4 md:p-2">
       <div className="relative max-w-7xl w-full">
         {/* Background decorative circles */}
         <div className="absolute top-0 left-0 w-60 h-60 md:w-80 md:h-80 bg-blue-600 rounded-full opacity-20 blur-3xl"></div>
@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="absolute top-1/2 right-1/4 w-48 h-48 md:w-64 md:h-64 bg-teal-500 rounded-full opacity-15 blur-3xl"></div>
 
         {/* Main portfolio card */}
-        <div className="relative bg-gray-800/80 backdrop-blur-sm rounded-3xl p-6 md:p-10 lg:p-12 border border-gray-700/50">
+        <div className="relative bg-gray-800/80 backdrop-blur-sm rounded-3xl p-6 md:p-10 lg:p-6 border border-gray-700/50">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
             {/* Left content */}
             <div className="space-y-6 md:space-y-8">
@@ -21,9 +21,9 @@ export default function Hero() {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">
                   Portfolio
                 </h1>
-                <h2 className="text-2xl md:text-3xl font-light text-teal-400 mb-1">
+                {/* <h2 className="text-2xl md:text-3xl font-light text-teal-400 mb-1">
                   GODFREY <span className="font-normal">NDINGINDWAYO</span>
-                </h2>
+                </h2> */}
                 <p className="text-base md:text-lg text-gray-300 tracking-wide">
                   UX / UI DESIGNER / SOFTWARE DEVELOPER
                 </p>
@@ -77,15 +77,15 @@ export default function Hero() {
                       <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">
                         Xd
                       </div>
-                      <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">
-                        <Figma />
+                      <div className="w-16 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">
+                        <Figma /> Figma
                       </div>
                     </div>
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                       <div className="w-6 h-6 bg-purple-600 rounded flex items-center justify-center text-white text-xs font-bold">
                         Pr
                       </div>
-                    </div>
+                    </div> */}
                     <div className="flex flex-wrap gap-2 items-center">
                       <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white text-xs font-bold">
                         Ae

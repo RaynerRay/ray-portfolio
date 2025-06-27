@@ -1,6 +1,6 @@
-import ProductTimeline from "@/components/Timeline";
+import ProductTimeline from "../../components/Timeline";
 import { CheckCircle, AlertCircle } from "lucide-react";
-import Link from "next/link";
+
 
 const problems = [
   {
@@ -55,7 +55,7 @@ export default function Page() {
             href="https://www.shiftly.uk"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
+            className="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
           >
             View Live Site →
           </a>
