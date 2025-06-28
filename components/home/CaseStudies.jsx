@@ -162,7 +162,7 @@ export default function CaseStudies() {
                 <div className="space-y-2">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                     <span className="text-4xl lg:text-6xl font-bold text-gray-600">
-                      01
+                      02
                     </span>
                     <div>
                       <h3 className="text-white font-semibold text-base lg:text-lg">
