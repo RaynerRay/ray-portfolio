@@ -30,7 +30,7 @@ const stages = [
 export default function TimelineSunquest() {
   return (
     <div className="bg-black text-white px-4 py-16 md:px-20 rounded-lg">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-10">
           <span className="inline-block bg-sky-100 text-black text-sm px-3 py-1 rounded-full font-medium"> Product Timeline</span>
           <p className="mt-6 text-lg text-gray-300 max-w-3xl">

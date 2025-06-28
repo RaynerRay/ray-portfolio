@@ -44,146 +44,129 @@ const solutions = [
 
 export default function Page() {
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white">
-      {/* Header Section */}
+    <div className="bg-gray-900 ">
+    <div className="bg-gradient-to-br from-gray-500/20 to-slate-500/20 backdrop-blur-sm text-white max-w-7xl mx-auto p-6 md:p-12 rounded-lg">
+      <div className="mb-12 ">
       <div className="mb-12">
-      
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Shiftly Case Study
-          </h1>
-          
-      <div className="mb-4">
-      <a
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          Shiftly UK 
+        </h1>
+        <p className="text-gray-300 text-lg mb-2">
+          <strong className="text-emerald-300">Challenge:</strong> Build a web app that connects  healthcare providers and qualified professionals.
+        </p>
+        <p className="text-gray-300 text-md mb-1">
+          <strong className="text-indigo-300 ">Deliverables:</strong> User testing report, Affinity map, Wireframe, UI, Prototype, React UI
+        </p>
+        <p className="text-gray-300 text-md">
+          <strong className="text-fuchsia-400">Role:</strong> Lead Product Designer/Developer
+        </p>
+      </div>
+
+        <div className="mb-4">
+          <a
             href="https://www.shiftly.uk"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
+            className="bg-blue-800/20 text-blue-300 px-4 py-2 rounded-full text-center text-sm font-medium"
           >
             View Live Site →
           </a>
-      </div>
-       
+        </div>
 
         <div className="flex flex-col lg:flex-row lg:items-start gap-8">
           {/* Description */}
-          <div className="lg:w-2/3">
-            <p className="text-gray-700 text-lg leading-relaxed">
-              <strong>Shiftly</strong> is a healthcare staffing platform
-              revolutionising how shifts are filled across the UK. It bridges
-              the gap between care providers and verified healthcare
-              professionals with instant, real-time connections. This case study
-              highlights the design and UX improvements that transformed Shiftly
-              into a seamless, trusted, and efficient solution for both
-              healthcare facilities and professionals.
+          {/* <div className="lg:w-2/3">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              <strong>Shiftly</strong> is a healthcare staffing platform revolutionising how shifts are filled across the UK. It bridges the gap between care providers and verified healthcare professionals with instant, real-time connections. This case study highlights the design and UX improvements that transformed Shiftly into a seamless, trusted, and efficient solution for both healthcare facilities and professionals.
             </p>
-          </div>
+          </div> */}
 
           {/* Feature Tags */}
-          <div className="lg:w-1/3">
+          {/* <div className="lg:w-1/3">
             <div className="grid grid-cols-2 gap-3">
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Real-Time Matching
-              </div>
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Mobile-first Design
-              </div>
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Intuitive UI
-              </div>
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Healthcare UX
-              </div>
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Seamless Onboarding
-              </div>
-              <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                Shift Discovery
-              </div>
+              {["Real-Time Matching", "Mobile-first Design", "Intuitive UI", "Healthcare UX", "Seamless Onboarding", "Shift Discovery"].map((tag) => (
+                <div
+                  key={tag}
+                  className="bg-green-800/20 text-emerald-300 px-4 py-2 rounded-full text-center text-sm font-medium"
+                >
+                  {tag}
+                </div>
+              ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Problems and Solutions Section */}
-      <div className="mb-8">
+      {/* <div className="mb-8">
         <div className="flex items-center gap-4 mb-8">
-          {/* <div className="bg-purple-200 text-purple-700 px-4 py-2 rounded-full font-medium">
-            01
-          </div> */}
-          <div className="bg-purple-200 text-purple-700 px-6 py-2 rounded-full font-medium">
+          <div className="bg-indigo-600/30 text-indigo-200 px-6 py-2 rounded-full font-medium">
             Problems and Solutions
           </div>
         </div>
 
-        <p className="text-gray-700 text-lg mb-8 max-w-4xl">
-          With a human-centred design approach, we tackled critical usability
-          issues in the Shiftly experience—focusing on faster shift fulfillment,
-          better navigation, and improved mobile performance. These changes
-          directly enhanced <strong>engagement</strong>,
-          <strong>efficiency</strong>, and <strong>user trust</strong> across
-          the platform.
+        <p className="text-gray-300 text-lg mb-8 max-w-4xl">
+          With a human-centred design approach, we tackled critical usability issues in the Shiftly experience—focusing on faster shift fulfillment, better navigation, and improved mobile performance. These changes directly enhanced <strong className="text-emerald-300">engagement</strong>, <strong className="text-emerald-300">efficiency</strong>, and <strong className="text-emerald-300">user trust</strong> across the platform.
         </p>
-      </div>
+      </div> */}
 
       {/* Problems vs Solutions */}
-      <div className="relative bg-white py-20 px-6 md:px-20 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-gray-900 to-slate-500/20 backdrop-blur-sm py-20 px-6 md:px-20 overflow-hidden rounded-xl">
         {/* Decorative Bubbles */}
-        <div className="absolute top-20 left-10 w-48 h-48 bg-purple-300 rounded-full opacity-20 z-0" />
-        <div className="absolute bottom-0 left-1/3 w-40 h-40 bg-blue-400 rounded-full opacity-20 z-0" />
-        <div className="absolute top-0 right-10 w-48 h-48 bg-blue-400 rounded-full opacity-20 z-0" />
-        <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-purple-400 rounded-full opacity-20 z-0" />
+        <div className="absolute top-20 left-10 w-48 h-48 bg-fuchsia-500 rounded-full opacity-20 z-0" />
+        <div className="absolute bottom-0 left-1/3 w-40 h-40 bg-emerald-500 rounded-full opacity-20 z-0" />
+        <div className="absolute top-0 right-10 w-48 h-48 bg-blue-500 rounded-full opacity-20 z-0" />
+        <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-indigo-500 rounded-full opacity-20 z-0" />
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Left Column - Problems */}
+          {/* Problems */}
           <div>
-            <h2 className="text-red-600 text-2xl font-semibold mb-6">
-              Problems
-            </h2>
+            <h2 className="text-red-400 text-2xl font-semibold mb-6">Problems</h2>
             {problems.map((item, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-red-100 to-white p-5 rounded-xl mb-4 shadow-sm border border-red-200"
+                className="bg-gradient-to-r from-red-900/30 to-transparent p-5 rounded-xl mb-4 shadow-sm border border-red-600/30"
               >
                 <div className="flex items-start space-x-4">
-                  <AlertCircle className="text-red-600 mt-1" />
+                  <AlertCircle className="text-red-400 mt-1" />
                   <div>
-                    <h3 className="text-red-600 font-semibold text-lg mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-700">{item.desc}</p>
+                    <h3 className="text-red-300 font-semibold text-lg mb-1">{item.title}</h3>
+                    <p className="text-sm text-gray-300">{item.desc}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Right Column - Solutions */}
+          {/* Solutions */}
           <div>
-            <h2 className="text-green-600 text-2xl font-semibold mb-6">
-              Solutions
-            </h2>
+            <h2 className="text-green-400 text-2xl font-semibold mb-6">Solutions</h2>
             {solutions.map((item, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-white to-green-50 p-5 rounded-xl mb-4 shadow-sm border border-green-200"
+                className="bg-gradient-to-r from-green-800/20 to-transparent p-5 rounded-xl mb-4 shadow-sm border border-green-400/30"
               >
                 <div className="flex items-start space-x-4">
-                  <CheckCircle className="text-green-600 mt-1" />
+                  <CheckCircle className="text-green-400 mt-1" />
                   <div>
-                    <h3 className="text-green-600 font-semibold text-lg mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-700">{item.desc}</p>
+                    <h3 className="text-green-300 font-semibold text-lg mb-1">{item.title}</h3>
+                    <p className="text-sm text-gray-300">{item.desc}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <ProductTimeline />
+      </div>
+    </div>
+      {/* Header Section */}
+      
+      <div className="max-w-7xl mx-auto">
+      <ProductTimeline />
         <Approach />
         {/* <ImageSection /> */}
       </div>
+      
     </div>
   );
 }
