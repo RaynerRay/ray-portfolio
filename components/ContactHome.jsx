@@ -23,12 +23,12 @@ export default function ContactHome() {
 
   return (
     <div className="min-h-screen bg-[#0E0E0E] text-white p-6 md:p-12 grid place-items-center" id="contact">
-      <div className="max-w-4xl w-full">
+      <div className="max-w-7xl w-full">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-sky-300 to-purple-500 text-transparent bg-clip-text mb-4">
-          Contact Us
+          Contact Me
         </h1>
         <p className="text-gray-400 mb-10">
-          Have a project in mind? We'd love to hear from you. Reach out through any of the channels below.
+          Have a project in mind? I'd love to hear from you. Reach out through any of the channels below.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">

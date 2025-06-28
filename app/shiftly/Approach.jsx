@@ -3,7 +3,7 @@ import { Search, X, Layers, GitBranch } from 'lucide-react';
 
 const Approach = () => {
   return (
-    <div className="min-h-screen bg-gray-900 p-8 relative overflow-hidden rounded-lg mt-4">
+    <div className="bg-gray-900 p-8 relative overflow-hidden rounded-lg">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-gray-800 opacity-20" 
            style={{
@@ -18,11 +18,9 @@ const Approach = () => {
       <div className="relative z-10 max-w-7xl mx-auto ">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12">
-          {/* <div className="bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 border border-white/20">
-            <span className="text-white font-medium text-lg">02</span>
-          </div> */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-full px-8 py-3 border border-white/20">
-            <span className="text-white font-medium text-sm">UX Approach</span>
+         
+          <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-1 border border-white/20">
+            <span className="text-white font-medium text-xs ">UX APPROACH / RESEARCH PROCESS</span>
           </div>
         </div>
 
@@ -30,9 +28,9 @@ const Approach = () => {
         <div className=" gap-8 items-start mb-4">
           {/* Left side - Description */}
           <div className="space-y-6">
-            <div className="text-white/90 text-lg leading-relaxed">
+            <div className="text-white/90 text-md leading-relaxed">
               <p>
-              The UX approach for the Shiftly platform focused on delivering an intuitive, efficient platform. It centralises healthcare company needs with available workers, streamlines placement and management, and simplifies complex scheduling and compliance. The platform also emphasizes security and trust through integrated verification and communication tools, ensuring both effectiveness and safety.
+              The UX approach for the Shiftly platform focused on delivering an intuitive, efficient platform. Simplifying complex scheduling and compliance. I did competitive studies and analysed their UVP, helpful features, and common user complaints.
               </p>
             </div>
           </div>

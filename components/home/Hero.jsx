@@ -1,139 +1,112 @@
-import React from "react";
-import { Figma, Globe, Smartphone } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import { Globe, Smartphone, Figma } from 'lucide-react';
+import Image from 'next/image';
 
-export default function Hero() {
+const ImprovedHero = () => {
   return (
-    <div className=" bg-gray-900 flex items-center justify-center p-4 md:p-2">
-      <div className="relative max-w-7xl w-full">
-        {/* Background decorative circles */}
-        <div className="absolute top-0 left-0 w-60 h-60 md:w-80 md:h-80 bg-blue-600 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-52 h-52 md:w-72 md:h-72 bg-purple-600 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute top-1/2 right-1/4 w-48 h-48 md:w-64 md:h-64 bg-teal-500 rounded-full opacity-15 blur-3xl"></div>
+    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+      {/* Background grid pattern */}
+      <div className="absolute inset-0 bg-gray-800 opacity-20" 
+           style={{
+             backgroundImage: `url("data:image/svg+xml,%3csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'%3e%3cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%23374151' stroke-width='1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23grid)' /%3e%3c/svg%3e")`
+           }}>
+      </div>
 
-        {/* Main portfolio card */}
-        <div className="relative bg-gray-900 backdrop-blur-sm rounded-3xl p-6 md:p-10 lg:p-12 border border-gray-700/50 mt-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
-            {/* Left content */}
-            <div className="space-y-6 md:space-y-8">
-              <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">
-                 <span className="text-3xl font-extrabold bg-gradient-to-r from-teal-300 via-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer tracking-wider hover:scale-105 transition-transform duration-300 ease-in-out">
-                 Hi! My name is<span className="font-normal"> Godfrey</span>
-          </span>
-                </h1>
-                {/* <h2 className="text-2xl md:text-3xl font-light text-teal-400 mb-1">
-                  GODFREY <span className="font-normal">NDINGINDWAYO</span>
-                </h2> */}
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-              I'm a UX/UI designer and Software Developer. Skilled in bridging UI/UX
-                design with React front-end development, creating intuitive and
-                accessible user interfaces.
-              </p>
-                
+      {/* Background decorative circles - using consistent theme colors */}
+      <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-amber-500/15 to-orange-500/15 rounded-full blur-3xl"></div>
 
-              <Link
-  href="#case-studies"
-  className="inline-flex items-center gap-2 mt-6 px-4 py-1 bg-gradient-to-r from-teal-400 to-cyan-500 text-white rounded-full shadow-md hover:from-teal-300 hover:to-cyan-400 transition-all duration-300 text-xs md:text-base font-medium"
->
-  View Case Studies →
-</Link>
-              </div>
-
+      <div className="relative z-10 min-h-screen flex items-center justify-center p-4 sm:p-8">
+        <div className="max-w-7xl w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
+            {/* Left content - Text and CTA */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <div>
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+                    <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                      Hi! My name is Godfrey
+                    </span>
+                  </h1>
+                  <p className="text-white/70 text-lg sm:text-xl leading-relaxed mb-6">
+                    I'm a UX/UI designer and Software Developer. Skilled in bridging UI/UX design with React front-end development, creating intuitive and accessible user interfaces.
+                  </p>
+                </div>
+
+                <button className="inline-flex items-center gap-3  px-4 md:px-8 md:py-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-medium text-sm md:text-lg hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/25">
+                  View Case Studies
+                 
+                </button>
+              </div>
             </div>
 
-            {/* Right content */}
+            {/* Right content - Profile and Skills */}
             <div className="space-y-8">
-              {/* Profile image */}
-              <div className="relative">
-                <div className="w-60 h-60 md:w-72 md:h-72 lg:w-60 lg:h-60 mx-auto relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-blue-500 rounded-full opacity-30 blur-xl"></div>
-                  <div className="relative w-full h-full bg-gray-700 rounded-full overflow-hidden border-4 border-gray-600">
-                    <Image
-                      src="/ray.jpeg"
-                      alt="Profile photo"
-                      width={400}
-                      height={400}
-                      className="rounded-full object-cover w-full h-full"
-                    />
+              {/* Profile Image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative">
+                  <div className="w-64 h-64 sm:w-80 sm:h-80 relative">
+                    {/* Glowing background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/30 to-blue-500/30 rounded-full blur-2xl"></div>
+                    {/* Profile container */}
+                    <div className="relative w-full h-full bg-gradient-to-br from-gray-700 to-gray-800 rounded-full p-2 border border-white/10">
+                      <div className="w-full h-full bg-gray-600 rounded-full overflow-hidden">
+                        {/* Placeholder for profile image */}
+                        <div className="w-full h-full bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center text-white/50 text-6xl font-bold">
+                          <Image src={"/ray.jpeg"} height={400} width={400} alt='hero picture'/>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Skills section */}
-              <div className="grid grid-cols-2 gap-6 sm:gap-8">
-                {/* Software Skills */}
-                <div>
-                  <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">
-                    TOOLS
-                  </h3>
+              {/* Skills Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {/* Tools Card */}
+                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                  <h3 className="text-white font-semibold mb-4 text-sm tracking-wider">TOOLS</h3>
                   <div className="space-y-3">
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">
-                        Xd
-                      </div>
-                      <div className="w-16 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">
-                         Figma
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      <div className="px-3 py-1 bg-orange-500 rounded-full text-white text-xs font-medium">Adobe XD</div>
+                      <div className="px-3 py-1 bg-purple-500 rounded-full text-white text-xs font-medium">Figma</div>
                     </div>
-                    {/* <div className="flex items-center gap-2">
-                      <div className="w-6 h-6 bg-purple-600 rounded flex items-center justify-center text-white text-xs font-bold">
-                        Pr
-                      </div>
-                    </div> */}
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white text-xs font-bold">
-                        Ae
-                      </div>
-                      <div className="px-2 h-6 bg-purple-700 rounded flex items-center justify-center text-white text-xs font-bold">
-                        Tailwind CSS
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      <div className="px-3 py-1 bg-blue-600 rounded-full text-white text-xs font-medium">After Effects</div>
+                      <div className="px-3 py-1 bg-cyan-500 rounded-full text-white text-xs font-medium">Tailwind</div>
                     </div>
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <div className="px-2 h-6 bg-blue-400 rounded flex items-center justify-center text-white text-xs font-bold">
-                        React
-                      </div>
-                      <div className="px-2 h-6 bg-blue-400 rounded flex items-center justify-center text-white text-xs font-bold">
-                        JavaScript
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      <div className="px-3 py-1 bg-blue-400 rounded-full text-white text-xs font-medium">React</div>
+                      <div className="px-3 py-1 bg-yellow-500 rounded-full text-white text-xs font-medium">JavaScript</div>
                     </div>
                   </div>
                 </div>
 
-                {/* Core Skills */}
-                <div>
-                  <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">
-                    CORE SKILLS
-                  </h3>
-                  <div className="space-y-2 text-gray-300 text-sm">
+                {/* Skills Card */}
+                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                  <h3 className="text-white font-semibold mb-4 text-sm tracking-wider">SKILLS</h3>
+                  <div className="space-y-3 text-white/80 text-sm">
                     <div>UX/UI Design & Strategy</div>
-                    <div>Design Systems & Component Libraries</div>
+                    <div>Wireframing & Prototyping</div>
+                    <div>User Research & Testing</div>
                     <div className="flex items-center gap-2">
-                      <span>Wireframing & Prototyping</span>
-                      <Figma className="w-4 h-4 text-gray-400" />
-                    </div>
-                    <div>User Research & Usability Testing</div>
-                    <div className="flex items-center gap-2 flex-wrap">
                       <span>Mobile & Web Apps</span>
                       <div className="flex gap-1">
                         <Globe className="w-4 h-4 text-blue-400" />
                         <Smartphone className="w-4 h-4 text-green-400" />
-                        <div className="w-4 h-4 bg-orange-400 rounded-full"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Extras */}
-              <div>
-                <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">
-                  EXTRAS
-                </h3>
-                <p className="text-gray-300 text-sm">
-                  Driven | Effective communicator | Decisive and accountable
+              {/* Extras Card */}
+              <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">EXTRAS</h3>
+                <p className="text-white/80 text-sm">
+                  Driven • Effective communicator • Decisive and accountable
                 </p>
               </div>
             </div>
@@ -142,4 +115,6 @@ export default function Hero() {
       </div>
     </div>
   );
-}
+};
+
+export default ImprovedHero;

@@ -1,5 +1,9 @@
 import { AlertCircle, CheckCircle } from "lucide-react";
-import TimelineSunquest from './../../components/TimelineSuqnuest';
+import TimelineSunquest from "./../../components/TimelineSuqnuest";
+import ApproachSunquest from "../../components/ApproachSunquest";
+import UserTestingSunquest from "../../components/UserTestingSunquest";
+import ValidationSunquest from "../../components/ValidationSunquest";
+import AfterThoughtsSunquest from "../../components/AfterThoughtsSunquest";
 
 const problems = [
   {
@@ -40,131 +44,110 @@ const solutions = [
 ];
 
 export default function Page() {
-    return (
-      <div className="max-w-6xl mx-auto p-6 bg-white">
-        {/* Header Section */}
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Sun Quest Aviation Case Study
+  return (
+    <div className="bg-gray-900">
+      {/* Header Section */}
+      <div className="max-w-7xl mx-auto p-6  bg-gradient-to-br from-gray-800/20 to-gray-950/20 backdrop-blur-sm text-white max-w-7xl mx-auto p-6 md:p-12 rounded-lg relative">
+        <div
+          className="absolute inset-0 bg-gray-800 opacity-20"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cpattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'%3e%3cpath d='M 40 0 L 0 0 0 40' fill='none' stroke='%23374151' stroke-width='1'/%3e%3c/pattern%3e%3c/defs%3e%3crect width='100%25' height='100%25' fill='url(%23grid)' /%3e%3c/svg%3e")`,
+          }}
+        ></div>
+
+        <div className="mb-4 relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent">
+            Sunquest Flight Academy - 2020
           </h1>
-          <div className="mb-4">
-      <a
-            href="https://www.sqasa.co.za"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium my-2"
-          >
-            View Live Site →
-          </a>
-      </div>
-  
-          <div className="flex flex-col lg:flex-row lg:items-start gap-8">
-            {/* Description */}
-            <div className="lg:w-2/3">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                <strong>Sun Quest Aviation</strong> is a flight school based in Johannesburg, South Africa, offering international-standard 
-                pilot training in one of the best flying climates in the world. With students from all over the globe, Sun Quest focuses 
-                on providing clear, accelerated paths to professional pilot certification—from PPL to ATPL.
-                <br /><br />
-                This case study outlines how we restructured the digital experience to improve international access, modernise the interface, 
-                and enhance the admissions journey through intuitive UX and a student-first design system.
-              </p>
-            </div>
-  
-            {/* Feature Tags */}
-            <div className="lg:w-1/3">
-              <div className="grid grid-cols-2 gap-3">
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Aviation UX
-                </div>
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Student Journey
-                </div>
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Global Accessibility
-                </div>
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Responsive UI
-                </div>
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Onboarding Flows
-                </div>
-                <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center text-sm font-medium">
-                  Application UX
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        {/* Problems and Solutions Section */}
-        <div className="mb-8">
-          <div className="flex items-center gap-4 mb-8">
-            {/* <div className="bg-blue-200 text-blue-700 px-4 py-2 rounded-full font-medium">
-              01
-            </div> */}
-            <div className="bg-blue-200 text-blue-700 px-6 py-2 rounded-full font-medium">
-              Problems and Solutions
-            </div>
-          </div>
-  
-          <p className="text-gray-700 text-lg mb-8 max-w-4xl">
-            A modern, accessible website is essential for a global flight academy. Through focused design and development, 
-            we tackled Sun Quest’s core UX challenges—improving clarity, boosting international reach, and aligning the digital 
-            experience with the prestige and speed of its aviation programs.
+          <p className="text-gray-300 text-lg mb-2">
+            <strong className="text-amber-300">Mission:</strong> Empower
+            aspiring pilots by offering top-tier aviation training with
+            world-class instructors and state-of-the-art aircraft.
+          </p>
+          <p className="text-gray-300 text-md mb-1">
+            <strong className="text-sky-300">Programs:</strong> Private Pilot
+            License (PPL), Commercial Pilot License (CPL), Instrument Rating,
+            Flight Instructor Courses
+          </p>
+          <p className="text-gray-300 text-md">
+            <strong className="text-rose-300">Role:</strong> Lead
+            Designer/Developer — Website, UI/UX, Branding
           </p>
         </div>
-  
-        {/* Problems vs Solutions */}
-        <div className="relative bg-white py-20 px-6 md:px-20 overflow-hidden">
-          {/* Decorative Bubbles */}
-          <div className="absolute top-20 left-10 w-48 h-48 bg-blue-300 rounded-full opacity-20 z-0" />
-          <div className="absolute bottom-0 left-1/3 w-40 h-40 bg-blue-400 rounded-full opacity-20 z-0" />
-          <div className="absolute top-0 right-10 w-48 h-48 bg-blue-400 rounded-full opacity-20 z-0" />
-          <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-blue-400 rounded-full opacity-20 z-0" />
-  
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Left Column - Problems */}
-            <div>
-              <h2 className="text-red-600 text-2xl font-semibold mb-6">Problems</h2>
-              {problems.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-r from-red-100 to-white p-5 rounded-xl mb-4 shadow-sm border border-red-200"
-                >
-                  <div className="flex items-start space-x-4">
-                    <AlertCircle className="text-red-600 mt-1" />
-                    <div>
-                      <h3 className="text-red-600 font-semibold text-lg mb-1">{item.title}</h3>
-                      <p className="text-sm text-gray-700">{item.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-  
-            {/* Right Column - Solutions */}
-            <div>
-              <h2 className="text-green-600 text-2xl font-semibold mb-6">Solutions</h2>
-              {solutions.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-r from-white to-green-50 p-5 rounded-xl mb-4 shadow-sm border border-green-200"
-                >
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="text-green-600 mt-1" />
-                    <div>
-                      <h3 className="text-green-600 font-semibold text-lg mb-1">{item.title}</h3>
-                      <p className="text-sm text-gray-700">{item.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <TimelineSunquest />
+
+        <div className="relative z-10">
+          <a
+            href="https://www.sunquestflight.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-800/20 text-yellow-200 px-4 py-2 rounded-full text-center text-sm font-medium hover:bg-blue-700/20 hover:text-yellow-100"
+          >
+            Visit Sunquest →
+          </a>
         </div>
       </div>
-    );
-  }
-  
+
+<ApproachSunquest />
+<UserTestingSunquest />
+
+      {/* Problems vs Solutions */}
+      <div className="max-w-7xl mx-auto relative bg-gradient-to-br from-gray-900 to-slate-500/20 backdrop-blur-sm py-20 px-6 md:px-20 overflow-hidden rounded-xl">
+        {/* Decorative Bubbles */}
+        <div className="absolute top-20 left-10 w-48 h-48 bg-fuchsia-500 rounded-full opacity-20 z-0" />
+        <div className="absolute bottom-0 left-1/3 w-40 h-40 bg-emerald-500 rounded-full opacity-20 z-0" />
+        <div className="absolute top-0 right-10 w-48 h-48 bg-blue-500 rounded-full opacity-20 z-0" />
+        <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-indigo-500 rounded-full opacity-20 z-0" />
+
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Problems */}
+          <div>
+            <h2 className="text-red-400 text-2xl font-semibold mb-6">
+              Problems
+            </h2>
+            {problems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-r from-red-900/30 to-transparent p-5 rounded-xl mb-4 shadow-sm border border-red-600/30"
+              >
+                <div className="flex items-start space-x-4">
+                  <AlertCircle className="text-red-400 mt-1" />
+                  <div>
+                    <h3 className="text-red-300 font-semibold text-lg mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-gray-300">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Solutions */}
+          <div>
+            <h2 className="text-green-400 text-2xl font-semibold mb-6">
+              Solutions
+            </h2>
+            {solutions.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-r from-green-800/20 to-transparent p-5 rounded-xl mb-4 shadow-sm border border-green-400/30"
+              >
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="text-green-400 mt-1" />
+                  <div>
+                    <h3 className="text-green-300 font-semibold text-lg mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-gray-300">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <ValidationSunquest />
+      <AfterThoughtsSunquest />
+    </div>
+  );
+}

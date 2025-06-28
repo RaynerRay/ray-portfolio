@@ -9,7 +9,7 @@ export default function Home1() {
       <div className="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-blue-900 rounded-full opacity-30 z-0" />
 
       {/* Main Card */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center bg-[#141414] rounded-2xl p-6 md:p-8 shadow-xl w-full max-w-5xl">
+      <div className="relative z-10 flex flex-col md:flex-row items-center bg-[#141414] rounded-2xl p-6 md:p-8 shadow-xl w-full max-w-7xl">
         {/* Left side image */}
         <div className="flex-shrink-0 mb-6 md:mb-0">
           <Image

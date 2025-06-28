@@ -1,3 +1,4 @@
+import { BookOpen} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,17 +24,17 @@ export default function CaseStudies() {
 
       <div className="relative z-10 py-16 px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h1 className="text-3xl lg:text-4xl text-white font-light">
             <span className="font-medium">Case</span>
-            <span className="text-gray-400"> Studies.</span>
+            <span className="text-gray-400"> Studies</span>
           </h1>
         </div>
 
         <div className="max-w-7xl mx-auto">
           {/* Mobile header */}
-          <div className="block lg:hidden mb-8">
-            <h2 className="text-4xl font-bold text-blue-400 text-center">
+          <div className="block lg:hidden mb-4">
+            <h2 className="text-xl font-bold text-blue-400 text-center">
               OVERVIEW
             </h2>
           </div>
@@ -105,6 +106,9 @@ export default function CaseStudies() {
                       <p className="text-gray-400 text-sm">
                         Marketplace for Healthcare workers
                       </p>
+                      <p className="text-gray-500 text-xs flex py-2">
+                        <BookOpen className="h-4 w-4 mr-1" /> : 15 minutes
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -166,6 +170,9 @@ export default function CaseStudies() {
                       </h3>
                       <p className="text-gray-400 text-xs lg:text-sm">
                         Aviation School Website
+                      </p>
+                      <p className="text-gray-500 text-xs flex py-2">
+                        <BookOpen className="h-4 w-4 mr-1" /> : 10 minutes
                       </p>
                     </div>
                   </div>

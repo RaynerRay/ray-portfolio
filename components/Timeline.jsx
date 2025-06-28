@@ -29,7 +29,7 @@ const stages = [
 
 export default function ProductTimeline() {
   return (
-    <div className="bg-black text-white px-4 py-16 md:px-20 rounded-lg">
+    <div className="bg-gray-700/20 text-white px-4 py-16 md:px-20 rounded-lg">
       <div className="">
         <div className="mb-10">
           <span className="inline-block bg-sky-100 text-black text-sm px-3 py-1 rounded-full font-medium"> Product Timeline</span>
