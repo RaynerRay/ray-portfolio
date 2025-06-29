@@ -4,6 +4,7 @@ import ApproachSunquest from "../../components/ApproachSunquest";
 import UserTestingSunquest from "../../components/UserTestingSunquest";
 import ValidationSunquest from "../../components/ValidationSunquest";
 import AfterThoughtsSunquest from "../../components/AfterThoughtsSunquest";
+import Image from "next/image";
 
 const problems = [
   {
@@ -82,9 +83,12 @@ export default function Page() {
             rel="noopener noreferrer"
             className="bg-blue-800/20 text-yellow-200 px-4 py-2 rounded-full text-center text-sm font-medium hover:bg-blue-700/20 hover:text-yellow-100"
           >
-            Visit Sunquest →
+            View Live Site →
           </a>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <Image src={"/no-bg-sqasa.png"} height={200} width={200} alt="screenshot" />
       </div>
 
 <ApproachSunquest />

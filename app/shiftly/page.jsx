@@ -5,6 +5,8 @@ import ImageSection from "./Image";
 import UserTesting from "../../components/UserTesting";
 import Validation from "../../components/Validation";
 import AfterThoughts from "../../components/AfterThoughts";
+import Image from "next/image";
+import Link from "next/link";
 
 const problems = [
   {
@@ -84,16 +86,20 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="">
+        <div className="relative z-10">
           <a
             href="https://www.shiftly.uk"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-800/20 text-blue-300 px-4 py-2 rounded-full text-center text-sm font-medium hover:bg-blue-700/20 hover:text-blue-200"
+            className="bg-blue-800/20 text-blue-200 px-4 py-2 rounded-full text-center text-sm font-medium hover:bg-blue-700/20 hover:text-yellow-100"
           >
             View Live Site →
           </a>
         </div>
+      </div>
+    
+      <div className="flex justify-center">
+        <Image src={"/no-bg-shiftly.png"} height={200} width={200} alt="screenshot" />
       </div>
 
       <div className="max-w-7xl mx-auto">
