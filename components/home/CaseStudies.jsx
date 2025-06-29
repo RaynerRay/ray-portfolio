@@ -115,7 +115,49 @@ export default function CaseStudies() {
               </div>
               </Link>
 
-              {/* Card 01 - Software Delivery */}
+              {/* Card 02 - SmartSchool */}
+              <Link href={"/school"}>
+              <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                <div className="absolute top-4 left-4">
+                  <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
+                    Desktop & Web app
+                  </span>
+                </div>
+
+                
+                <div className="mt-12 mb-6 relative">
+                  
+
+                  
+                  <Image
+                      src="/smartschool-desktop.png"
+                      alt="website screenshot"
+                      width={400}
+                      height={400}
+                      className="rounded-xl"
+                    />
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center gap-4">
+                    <span className="text-6xl font-bold text-gray-600">02</span>
+                    <div>
+                      <h3 className="text-white font-semibold text-lg">
+                        SmartSchool
+                      </h3>
+                      <p className="text-gray-400 text-xs flex py-2">
+                        School Management System
+                      </p>
+                      <p className="text-gray-500 text-xs flex py-2">
+                        <BookOpen className="h-4 w-4 mr-1" /> : 10 minutes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </Link>
+
+              {/* Card 03 - Sunquest */}
               <Link href={"/sunquest"}>
               <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-gray-700/50 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
                 <div className="absolute top-4 left-4">
@@ -162,7 +204,7 @@ export default function CaseStudies() {
                 <div className="space-y-2">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                     <span className="text-4xl lg:text-6xl font-bold text-gray-600">
-                      02
+                      03
                     </span>
                     <div>
                       <h3 className="text-white font-semibold text-base lg:text-lg">
@@ -180,50 +222,7 @@ export default function CaseStudies() {
               </div>
               </Link>
 
-              {/* Card 03 - Marketplace */}
-              {/* <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
-                <div className="absolute top-4 left-4">
-                  <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
-                    AR / VR App
-                  </span>
-                </div>
-
-                
-                <div className="mt-12 mb-6 relative">
-                  <div className="bg-amber-100 rounded-lg p-4 h-24 relative overflow-hidden">
-                    <div className="absolute top-2 left-2 text-xs text-gray-700">
-                      New Shoot
-                    </div>
-                    <div className="absolute bottom-2 left-2 w-12 h-8 bg-white rounded shadow-sm"></div>
-                    <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
-                      <div className="w-6 h-6 bg-gray-700 rounded-full"></div>
-                    </div>
-                  </div>
-
-                  
-                  <div className="absolute -right-2 -bottom-2 w-16 h-20 bg-blue-800 rounded-t-full">
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-200 rounded-full"></div>
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-gray-800 rounded-full"></div>
-                   
-                    <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-white rounded-full border-2 border-gray-300"></div>
-                    <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-500 rounded-full"></div>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex items-center gap-4">
-                    <span className="text-6xl font-bold text-gray-600">03</span>
-                    <div>
-                      <h3 className="text-white font-semibold text-lg">
-                        Marketplace
-                      </h3>
-                      <p className="text-gray-400 text-sm">
-                        Augmented reality Market Place
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+              
 
               {/* Card 04 - Fulfillment Hub USA */}
               {/* <div className="bg-gray-800/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
