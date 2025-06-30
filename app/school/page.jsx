@@ -98,6 +98,18 @@ export default function Page() {
 
       <div className="max-w-7xl mx-auto">
         <ApproachSchool />
+        <div className="flex justify-center border-t border-gray-200 mt-4">
+          <h1 className="text-xl md:text-3xl font-bold  mb-4 text-gray-100/50 mt-8">
+            Sketching early on to spark ideas.
+          </h1>
+          <Image
+            src={"/smartschoolwireframe.png"}
+            height={400}
+            width={800}
+            alt="sketch"
+            className="mt-8"
+          />
+        </div>
         <UserTestingSchool />
         {/* <ProductTimeline /> */}
         {/* Problems vs Solutions */}
