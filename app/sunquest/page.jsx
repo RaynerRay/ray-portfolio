@@ -61,14 +61,12 @@ export default function Page() {
             Sunquest Flight Academy 
           </h1>
           <p className="text-gray-300 text-lg mb-2">
-            <strong className="text-amber-300">Mission:</strong> Empower
-            aspiring pilots by offering top-tier aviation training with
-            world-class instructors and state-of-the-art aircraft.
+            <strong className="text-amber-300">Mission:</strong> Modernise the existing website.
           </p>
           <p className="text-gray-300 text-md mb-1">
-            <strong className="text-sky-300">Programs:</strong> Private Pilot
-            License (PPL), Commercial Pilot License (CPL), Instrument Rating,
-            Flight Instructor Courses
+            <strong className="text-indigo-300">Deliverables:</strong> User
+            testing report, High-fidelity
+            UI, Functional prototype, Website
           </p>
           <p className="text-gray-300 text-md">
             <strong className="text-rose-300">Role:</strong>
