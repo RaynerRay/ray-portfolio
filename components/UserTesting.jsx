@@ -4,8 +4,8 @@ import { User } from 'lucide-react';
 const UserTesting = () => {
   const testingData = [
     {
-      score: "0/10",
-      filledUsers: 0,
+      score: "5/10",
+      filledUsers: 5,
       description: "Find the product easy to use, and clear to navigate."
     },
     {
@@ -54,13 +54,14 @@ const UserTesting = () => {
         <div className="mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4">User Testing</h1>
           <p className="text-white/70 text-base sm:text-lg">
-            I conducted usability testing with 10 users with the goal to find out:
+            After creating the prototype. We conducted usability testing with 10 users with the goal to find out:
           </p>
           <ul className="mt-4 space-y-2 text-white/70 text-sm sm:text-base">
+            <li>• How easy to use the app is</li>
             <li>• What needs and goals drive people to use online healthcare services?</li>
-            <li>• What are people struggling with while using the current "Skin Image Search"?</li>
+            <li>• What are people struggling with while using other platforms</li>
             <li>• How can we build trust with customers?</li>
-            <li>• How can we better connect users with doctors?</li>
+            <li>• How can we better connect recruiters with workers?</li>
           </ul>
         </div>
 
@@ -68,7 +69,7 @@ const UserTesting = () => {
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">Synthesis & Analysis</h2>
           <p className="text-white/70 text-base sm:text-lg">
-            During the synthesis of our findings, I recognized some common pain points users experienced when using the current web app.
+            During the synthesis of our findings, I recognised some common pain points users experienced when using the current web app.
           </p>
         </div>
 

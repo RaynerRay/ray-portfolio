@@ -81,8 +81,8 @@ export default function Page() {
             testing report, Affinity map, Wireframe, UI, Prototype, React UI
           </p>
           <p className="text-gray-300 text-md">
-            <strong className="text-fuchsia-400">Role:</strong>
-            Designer/Developer
+            <strong className="text-fuchsia-400">Role:</strong> Researcher, Designer, Developer
+             
           </p>
         </div>
 
@@ -99,11 +99,19 @@ export default function Page() {
       </div>
     
       <div className="flex justify-center">
+    
         <Image src={"/no-bg-shiftly.png"} height={200} width={200} alt="screenshot" />
       </div>
 
       <div className="max-w-7xl mx-auto">
+
         <Approach />
+        <div className="flex justify-center border-t border-gray-200 mt-4">
+        <h1 className="text-xl md:text-3xl font-bold  mb-4 text-gray-100/50 mt-8">
+      Sketching early on to spark ideas.
+          </h1>
+        <Image src={"/shiftlywireframe.png"} height={400} width={800} alt="sketch" className="mt-8" />
+      </div>
         <UserTesting />
         <ProductTimeline />
         {/* Problems vs Solutions */}
