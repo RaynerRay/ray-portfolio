@@ -106,7 +106,7 @@ const ImprovedHero = () => {
               <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
                 <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">EXTRAS</h3>
                 <p className="text-white/80 text-sm">
-                  Driven • Effective communicator • Decisive and accountable
+                  Driven • Willing to learn • Decisive and accountable
                 </p>
               </div>
             </div>

@@ -81,7 +81,7 @@ export default function Page() {
             UI, Functional prototype, React-based dashboard
           </p>
           <p className="text-gray-300 text-md">
-            <strong className="text-fuchsia-400">Role:</strong> Lead Product
+            <strong className="text-fuchsia-400">Role:</strong> Product
             Designer & Full-Stack Developer
           </p>
         </div>

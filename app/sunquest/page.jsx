@@ -58,7 +58,7 @@ export default function Page() {
 
         <div className="mb-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent">
-            Sunquest Flight Academy - 2020
+            Sunquest Flight Academy 
           </h1>
           <p className="text-gray-300 text-lg mb-2">
             <strong className="text-amber-300">Mission:</strong> Empower
@@ -71,8 +71,8 @@ export default function Page() {
             Flight Instructor Courses
           </p>
           <p className="text-gray-300 text-md">
-            <strong className="text-rose-300">Role:</strong> Lead
-            Designer/Developer — Website, UI/UX, Branding
+            <strong className="text-rose-300">Role:</strong>
+            Designer/Developer — Website, UI/UX
           </p>
         </div>
 

@@ -81,7 +81,7 @@ export default function Page() {
             testing report, Affinity map, Wireframe, UI, Prototype, React UI
           </p>
           <p className="text-gray-300 text-md">
-            <strong className="text-fuchsia-400">Role:</strong> Lead Product
+            <strong className="text-fuchsia-400">Role:</strong>
             Designer/Developer
           </p>
         </div>
