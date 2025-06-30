@@ -102,52 +102,52 @@ export default function Page() {
 
         <Research />
         <Issues />
-        <div className="max-w-7xl mx-auto border-t border-gray-200 mt-4">
-        <h1 className="text-xl md:text-3xl font-bold  mb-4 text-gray-100/50 mt-8">
-          Low Fidelity Sketches
-          </h1>
-        <div className="flex justify-center gap-2">
-         
-          <Image
-            src={"/lofi.png"}
-            height={400}
-            width={800}
-            alt="sketch"
-            className="mt-8"
-          />
-          <Image
-            src={"/lofi1.png"}
-            height={400}
-            width={800}
-            alt="sketch"
-            className="mt-8"
-          />
-        </div>
+        <div className="max-w-7xl mx-auto border-t border-gray-200 mt-4 px-4 sm:px-6">
+  <h1 className="text-xl md:text-3xl font-bold mb-4 text-gray-100/50 mt-8">
+    Low Fidelity Sketches
+  </h1>
 
-        <h1 className="text-xl md:text-3xl font-bold  mb-4 text-gray-100/50 mt-8 pt-8">
-        Moving to high-fidelity prototypes
-          </h1>
-          <p className="text-md md:text-xl  mb-4 text-gray-100/50">As the project progressed, we iterated upon our low-fidelity designs and incorporated feedback from user surveys and testing. This phase focused on enhancing usability, refining the user interface, and ensuring that the core functionalities were ready for implementation.
-</p>
-        <div className="flex justify-center gap-2">
-         
-          <Image
-            src={"/hifi.png"}
-            height={400}
-            width={800}
-            alt="sketch"
-            className="mt-8"
-          />
-          <Image
-            src={"/hifi2.png"}
-            height={400}
-            width={800}
-            alt="sketch"
-            className="mt-8"
-          />
-        </div>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+    <Image
+      src={"/lofi.png"}
+      height={400}
+      width={800}
+      alt="Low fidelity sketch 1"
+      className="mt-4 w-full max-w-md rounded-md"
+    />
+    <Image
+      src={"/lofi1.png"}
+      height={400}
+      width={800}
+      alt="Low fidelity sketch 2"
+      className="mt-4 w-full max-w-md rounded-md"
+    />
+  </div>
 
-        </div>
+  <h1 className="text-xl md:text-3xl font-bold mb-4 text-gray-100/50 mt-12 pt-8">
+    Moving to High-Fidelity Prototypes
+  </h1>
+  <p className="text-md md:text-xl mb-4 text-gray-100/50">
+    As the project progressed, we iterated upon our low-fidelity designs and incorporated feedback from user surveys and testing. This phase focused on enhancing usability, refining the user interface, and ensuring that the core functionalities were ready for implementation.
+  </p>
+
+  <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+    <Image
+      src={"/hifi.png"}
+      height={400}
+      width={800}
+      alt="High fidelity prototype 1"
+      className="mt-4 w-full max-w-md rounded-md"
+    />
+    <Image
+      src={"/hifi2.png"}
+      height={400}
+      width={800}
+      alt="High fidelity prototype 2"
+      className="mt-4 w-full max-w-md rounded-md"
+    />
+  </div>
+</div>
 
         <UserStory />
         <FixedIssues />

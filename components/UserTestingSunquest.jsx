@@ -55,7 +55,7 @@ const UserTestingSunquest = () => {
         <div className="mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-4">User Testing</h1>
           <p className="text-white/70 text-base sm:text-lg">
-            We conducted usability testing with 10 prospective students to explore:
+            We conducted usability testing with 5 prospective students to explore:
           </p>
           <ul className="mt-4 space-y-2 text-white/70 text-sm sm:text-base">
             <li>• What motivates people to enroll in flight training?</li>
