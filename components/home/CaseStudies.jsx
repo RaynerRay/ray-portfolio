@@ -64,11 +64,12 @@ export default function CaseStudies() {
                 </div>
                 <div className="mt-12 mb-6 relative">
                   <Image
+
                     src="/sessionplanner.png"
                     alt="website screenshot"
                     width={400}
                     height={200}
-                    className="rounded-xl"
+                    className="rounded-xl h-54"
                   />
                 </div>
 
@@ -80,6 +81,9 @@ export default function CaseStudies() {
                         University Session Planner
                       </h3>
                       <p className="text-gray-400 text-sm">Web app</p>
+                      <p className="text-gray-500 text-xs flex py-2">
+                          <BookOpen className="h-4 w-4 mr-1" /> : 15 minutes
+                        </p>
                     </div>
                   </div>
                 </div>

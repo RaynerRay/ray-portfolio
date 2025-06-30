@@ -72,7 +72,7 @@ export default function Page() {
           </p>
           <p className="text-gray-300 text-md mb-1">
             <strong className="text-indigo-300">Deliverables:</strong> User
-            testing report, Low & High-fidelity UI, Functional prototype, Web app
+            testing report, Low & High-fidelity Wireframes, Functional prototype, Web app
           </p>
           <p className="text-gray-300 text-md">
             <strong className="text-rose-300">Role:</strong>
