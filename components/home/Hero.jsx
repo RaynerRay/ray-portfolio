@@ -1,6 +1,7 @@
 import React from 'react';
 import { Globe, Smartphone, Figma } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ImprovedHero = () => {
   return (
@@ -34,11 +35,12 @@ const ImprovedHero = () => {
                     I'm a UX/UI designer and Software Developer. Skilled in bridging UI/UX design with React front-end development, creating intuitive and accessible user interfaces.
                   </p>
                 </div>
-
+<Link href={"#case-studies"}>
                 <button className="inline-flex items-center gap-3  px-4 md:px-8 md:py-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-medium text-sm md:text-lg hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/25">
                   View Case Studies
                  
                 </button>
+                </Link>
               </div>
             </div>
 
@@ -74,8 +76,8 @@ const ImprovedHero = () => {
                       <div className="px-3 py-1 bg-purple-500 rounded-full text-white text-xs font-medium">Figma</div>
                     </div>
                     <div className="flex flex-wrap gap-2">
-                      <div className="px-3 py-1 bg-blue-600 rounded-full text-white text-xs font-medium">After Effects</div>
-                      <div className="px-3 py-1 bg-cyan-500 rounded-full text-white text-xs font-medium">Tailwind</div>
+                      <div className="px-3 py-1 bg-cyan-500 rounded-full text-white text-xs font-medium">HTML</div>
+                      <div className="px-3 py-1 bg-cyan-500 rounded-full text-white text-xs font-medium">CSS</div>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-3 py-1 bg-blue-400 rounded-full text-white text-xs font-medium">React</div>
@@ -106,7 +108,7 @@ const ImprovedHero = () => {
               <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
                 <h3 className="text-white font-semibold mb-3 text-sm tracking-wider">EXTRAS</h3>
                 <p className="text-white/80 text-sm">
-                  Driven • Willing to learn • Decisive and accountable
+                  Driven • Willing to learn • Decisive and Accountable
                 </p>
               </div>
             </div>
